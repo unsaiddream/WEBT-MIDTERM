@@ -3,12 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Explore six music cities on an interactive world map." />
+    <meta name="description" content="Explore six music cities on a world map." />
     <title>Explore the map | Music Map</title>
     <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/vendor/leaflet/leaflet.css" rel="stylesheet" />
-    <script src="assets/vendor/leaflet/leaflet.js"></script>
-    <link href="assets/style.css?v=3" rel="stylesheet" />
+    <link href="assets/style.css?v=4" rel="stylesheet" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -53,33 +51,78 @@
       <section class="page-hero">
         <div class="container">
           <h1>City map</h1>
-          <p>Click a marker to see the city and its genres.</p>
+          <p>Select a dot or read the city list below.</p>
         </div>
       </section>
       <section class="section-sm pt-0">
         <div class="container">
-          <div
-            id="music-map"
-            class="map-wrap"
-            role="region"
-            aria-label="Interactive map of music cities"
-          ></div>
-          <p class="text-muted-custom small mt-2">
-            Map shapes: Natural Earth. The city list is also below the map.
-          </p>
-          <div id="city-list" class="row g-4 mt-3"></div>
+          <div class="map-picture">
+            <img
+              class="world-map"
+              src="assets/world-map.svg?v=4"
+              alt="World map with six selected cities"
+              width="1440"
+              height="720"
+            />
+            <a class="map-pin" style="left: 71.4%; top: 26%" href="#almaty" aria-label="Almaty"></a>
+            <a class="map-pin" style="left: 85.3%; top: 29.1%" href="#seoul" aria-label="Seoul"></a>
+            <a class="map-pin" style="left: 88.8%; top: 30.2%" href="#tokyo" aria-label="Tokyo"></a>
+            <a
+              class="map-pin"
+              style="left: 53.7%; top: 20.8%"
+              href="#berlin"
+              aria-label="Berlin"
+            ></a>
+            <a class="map-pin" style="left: 50.9%; top: 46.4%" href="#lagos" aria-label="Lagos"></a>
+            <a
+              class="map-pin"
+              style="left: 29.4%; top: 27.4%"
+              href="#new-york"
+              aria-label="New York"
+            ></a>
+          </div>
+          <ul class="city-grid mt-4">
+            <li class="city-card" id="almaty">
+              <span class="eyebrow">Kazakhstan</span>
+              <h3>Almaty</h3>
+              <p>Indie · Pop</p>
+            </li>
+            <li class="city-card" id="seoul">
+              <span class="eyebrow">South Korea</span>
+              <h3>Seoul</h3>
+              <p>K-pop · Hip-hop</p>
+            </li>
+            <li class="city-card" id="tokyo">
+              <span class="eyebrow">Japan</span>
+              <h3>Tokyo</h3>
+              <p>City pop · Electronic</p>
+            </li>
+            <li class="city-card" id="berlin">
+              <span class="eyebrow">Germany</span>
+              <h3>Berlin</h3>
+              <p>Techno · Electronic</p>
+            </li>
+            <li class="city-card" id="lagos">
+              <span class="eyebrow">Nigeria</span>
+              <h3>Lagos</h3>
+              <p>Afrobeats · Pop</p>
+            </li>
+            <li class="city-card" id="new-york">
+              <span class="eyebrow">United States</span>
+              <h3>New York</h3>
+              <p>Hip-hop · Jazz</p>
+            </li>
+          </ul>
+          <p class="text-muted-custom small">Map shapes: Natural Earth.</p>
         </div>
       </section>
     </main>
     <footer class="site-footer">
-      <div
-        class="container d-flex flex-column flex-md-row justify-content-between gap-3 text-center text-md-start"
-      >
+      <div class="container text-center text-md-start">
         <span>Music Map</span>
         <span>Midterm project</span>
       </div>
     </footer>
     <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="assets/app.js?v=3"></script>
   </body>
 </html>

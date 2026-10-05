@@ -4,16 +4,14 @@ A five-page responsive website about music from six cities.
 
 ## Pages
 
-- `index.html` — home page and featured cities
-- `map.html` — interactive city map
-- `artists.html` — artists with a genre filter
+- `index.html` — home page
+- `map.html` — world map and city list
+- `artists.html` — artist examples
 - `genres.html` — comparison table
-- `contact.html` — suggestion form
+- `contact.html` — demo suggestion form
 
-Open `index.html` in a browser. Bootstrap, Leaflet, CSS, JavaScript and the map image are included in the project folder.
-
-The form checks required fields and saves suggestions in the current browser using `localStorage`. It does not send data to a server.
+Open `index.html` in a browser. Bootstrap, CSS, JavaScript and the map image are included in the project folder. The form shows a preview; it does not send or save data.
 
 Live site: https://unsaiddream.github.io/WEBT-MIDTERM/
 
-Map shapes come from [geo-countries](https://github.com/datasets/geo-countries), based on Natural Earth data. Third-party library licenses are in `assets/vendor/`.
+Map shapes come from [geo-countries](https://github.com/datasets/geo-countries), based on Natural Earth data. The Bootstrap license is in `assets/vendor/bootstrap/`.

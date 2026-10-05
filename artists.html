@@ -7,7 +7,7 @@
     <title>Artists | Music Map</title>
     <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
 
-    <link href="assets/style.css?v=3" rel="stylesheet" />
+    <link href="assets/style.css?v=4" rel="stylesheet" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -52,25 +52,14 @@
       <section class="page-hero">
         <div class="container">
           <h1>Artists</h1>
-          <p>A few artists from the cities on the map. Use the buttons to filter by genre.</p>
+          <p>A few artists from the cities on the map.</p>
         </div>
       </section>
       <section class="section-sm pt-0">
         <div class="container">
-          <div class="filter-bar" role="group" aria-label="Filter artists by genre">
-            <button class="filter-button active" data-filter="all" aria-pressed="true">All</button>
-            <button class="filter-button" data-filter="pop" aria-pressed="false">Pop</button>
-            <button class="filter-button" data-filter="electronic" aria-pressed="false">
-              Electronic
-            </button>
-            <button class="filter-button" data-filter="hiphop" aria-pressed="false">Hip-hop</button>
-            <button class="filter-button" data-filter="alternative" aria-pressed="false">
-              Alternative
-            </button>
-          </div>
           <ul class="row g-4 list-unstyled">
             <li class="col-md-6 col-xl-4 artist-column">
-              <article class="panel" data-genre="pop">
+              <article class="panel">
                 <p class="eyebrow">Seoul · South Korea</p>
                 <h3>BTS</h3>
                 <p class="text-muted-custom">Korean pop group.</p>
@@ -78,7 +67,7 @@
               </article>
             </li>
             <li class="col-md-6 col-xl-4 artist-column">
-              <article class="panel" data-genre="electronic">
+              <article class="panel">
                 <p class="eyebrow">Berlin · Germany</p>
                 <h3>Paul Kalkbrenner</h3>
                 <p class="text-muted-custom">Electronic musician from Berlin.</p>
@@ -86,7 +75,7 @@
               </article>
             </li>
             <li class="col-md-6 col-xl-4 artist-column">
-              <article class="panel" data-genre="hiphop">
+              <article class="panel">
                 <p class="eyebrow">New York · United States</p>
                 <h3>Nas</h3>
                 <p class="text-muted-custom">New York hip-hop artist.</p>
@@ -94,7 +83,7 @@
               </article>
             </li>
             <li class="col-md-6 col-xl-4 artist-column">
-              <article class="panel" data-genre="pop">
+              <article class="panel">
                 <p class="eyebrow">Lagos · Nigeria</p>
                 <h3>Wizkid</h3>
                 <p class="text-muted-custom">Afrobeats artist from Lagos.</p>
@@ -102,7 +91,7 @@
               </article>
             </li>
             <li class="col-md-6 col-xl-4 artist-column">
-              <article class="panel" data-genre="electronic">
+              <article class="panel">
                 <p class="eyebrow">Tokyo · Japan</p>
                 <h3>Yellow Magic Orchestra</h3>
                 <p class="text-muted-custom">Japanese electronic music group.</p>
@@ -110,7 +99,7 @@
               </article>
             </li>
             <li class="col-md-6 col-xl-4 artist-column">
-              <article class="panel" data-genre="alternative">
+              <article class="panel">
                 <p class="eyebrow">Almaty · Kazakhstan</p>
                 <h3>Unordinary Incident</h3>
                 <p class="text-muted-custom">Alternative artist from Almaty.</p>
@@ -122,14 +111,11 @@
       </section>
     </main>
     <footer class="site-footer">
-      <div
-        class="container d-flex flex-column flex-md-row justify-content-between gap-3 text-center text-md-start"
-      >
+      <div class="container text-center text-md-start">
         <span>Music Map</span>
         <span>Midterm project</span>
       </div>
     </footer>
     <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="assets/app.js?v=3"></script>
   </body>
 </html>

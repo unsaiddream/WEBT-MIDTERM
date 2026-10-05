@@ -7,7 +7,7 @@
     <title>Home | Music Map</title>
     <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
 
-    <link href="assets/style.css?v=3" rel="stylesheet" />
+    <link href="assets/style.css?v=4" rel="stylesheet" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -54,15 +54,13 @@
           <div class="row align-items-center g-4">
             <div class="col-lg-7">
               <h1>Music by city</h1>
-              <p>
-                Explore artists and genres from Almaty, Seoul, Tokyo, Berlin, Lagos and New York.
-              </p>
-              <a class="btn button-primary" href="map.html">Open the map</a>
+              <p>Explore artists and genres from six cities around the world.</p>
+              <a class="btn btn-primary" href="map.html">Open the map</a>
             </div>
             <div class="col-lg-5">
               <img
-                class="hero-map"
-                src="assets/world-map.svg?v=3"
+                class="world-map"
+                src="assets/world-map.svg?v=4"
                 alt="Map of the world"
                 width="720"
                 height="360"
@@ -73,24 +71,34 @@
       </section>
       <section class="section">
         <div class="container">
-          <div class="section-heading">
-            <h2>Featured cities</h2>
-            <p class="text-muted-custom">Choose a city to see it on the map.</p>
-          </div>
-          <div id="featured-cities" class="row g-3"></div>
-          <p class="mt-4 mb-0"><a href="map.html">See all six cities</a></p>
+          <h2>Featured cities</h2>
+          <ul class="city-grid">
+            <li class="city-card" id="almaty">
+              <span class="eyebrow">Kazakhstan</span>
+              <h3>Almaty</h3>
+              <p>Indie · Pop</p>
+            </li>
+            <li class="city-card" id="seoul">
+              <span class="eyebrow">South Korea</span>
+              <h3>Seoul</h3>
+              <p>K-pop · Hip-hop</p>
+            </li>
+            <li class="city-card" id="tokyo">
+              <span class="eyebrow">Japan</span>
+              <h3>Tokyo</h3>
+              <p>City pop · Electronic</p>
+            </li>
+          </ul>
+          <a href="map.html">See all cities</a>
         </div>
       </section>
     </main>
     <footer class="site-footer">
-      <div
-        class="container d-flex flex-column flex-md-row justify-content-between gap-3 text-center text-md-start"
-      >
+      <div class="container text-center text-md-start">
         <span>Music Map</span>
         <span>Midterm project</span>
       </div>
     </footer>
     <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="assets/app.js?v=3"></script>
   </body>
 </html>
