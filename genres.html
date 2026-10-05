@@ -1,30 +1,130 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Compare the sounds of cities around the world.">
-  <title>Genres | Music Map</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <link href="assets/style.css?v=2" rel="stylesheet">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
-      <div class="container"><a class="brand" href="index.html">Music<span class="brand-dot"> </span>Map</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="main-nav"><ul class="navbar-nav ms-auto align-items-lg-center"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="map.html">Map</a></li><li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li><li class="nav-item"><a class="nav-link active" href="genres.html" aria-current="page">Genres</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li></ul></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Compare the sounds of cities around the world." />
+    <title>Genres | Music Map</title>
+    <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="assets/style.css?v=3" rel="stylesheet" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+        <div class="container">
+          <a class="brand" href="index.html">Music Map</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="map.html">Map</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="artists.html">Artists</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="genres.html" aria-current="page">Genres</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <h1>Genres by city</h1>
+          <p>This table shows a few genres linked with each city.</p>
+        </div>
+      </section>
+      <section class="section-sm pt-0">
+        <div class="container">
+          <div class="section-heading"><h2>Genre comparison</h2></div>
+          <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+              <caption class="visually-hidden">
+                Comparison of sample genres and listening ideas across six cities
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">City</th>
+                  <th scope="col">Country</th>
+                  <th scope="col">Genres</th>
+                  <th scope="col">Example artist</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Almaty</th>
+                  <td>Kazakhstan</td>
+                  <td>Indie, pop</td>
+                  <td>Unordinary Incident</td>
+                </tr>
+                <tr>
+                  <th scope="row">Seoul</th>
+                  <td>South Korea</td>
+                  <td>K-pop, hip-hop</td>
+                  <td>BTS</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tokyo</th>
+                  <td>Japan</td>
+                  <td>City pop, electronic</td>
+                  <td>Yellow Magic Orchestra</td>
+                </tr>
+                <tr>
+                  <th scope="row">Berlin</th>
+                  <td>Germany</td>
+                  <td>Techno, electronic</td>
+                  <td>Paul Kalkbrenner</td>
+                </tr>
+                <tr>
+                  <th scope="row">Lagos</th>
+                  <td>Nigeria</td>
+                  <td>Afrobeats, pop</td>
+                  <td>Wizkid</td>
+                </tr>
+                <tr>
+                  <th scope="row">New York</th>
+                  <td>United States</td>
+                  <td>Hip-hop, jazz</td>
+                  <td>Nas</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-muted-custom small mt-3">These are examples, not a complete list.</p>
+          <a class="btn button-primary mt-3" href="map.html">Open the map</a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between gap-3 text-center text-md-start"
+      >
+        <span>Music Map</span>
+        <span>Midterm project</span>
       </div>
-    </nav>
-  </header>
-  <main id="main">
-<section class="page-hero"><div class="container"><p class="eyebrow">Genres</p><h1>Genres by city</h1><p>This table shows a few genres linked with each city.</p></div></section>
-<section class="section-sm pt-0"><div class="container"><div class="section-heading"><h2>Genre comparison</h2><p class="text-muted-custom"></p></div><div class="table-responsive"><table class="table table-hover align-middle mb-0"><caption class="visually-hidden">Comparison of sample genres and listening ideas across six cities</caption><thead><tr><th scope="col">City</th><th scope="col">Country</th><th scope="col">Genres</th><th scope="col">Example artist</th></tr></thead><tbody><tr><th scope="row">Almaty</th><td>Kazakhstan</td><td>Indie, pop</td><td>Unordinary Incident</td></tr><tr><th scope="row">Seoul</th><td>South Korea</td><td>K-pop, hip-hop</td><td>BTS</td></tr><tr><th scope="row">Tokyo</th><td>Japan</td><td>City pop, electronic</td><td>Yellow Magic Orchestra</td></tr><tr><th scope="row">Berlin</th><td>Germany</td><td>Techno, electronic</td><td>Paul Kalkbrenner</td></tr><tr><th scope="row">Lagos</th><td>Nigeria</td><td>Afrobeats, pop</td><td>Wizkid</td></tr><tr><th scope="row">New York</th><td>United States</td><td>Hip-hop, jazz</td><td>Nas</td></tr></tbody></table></div><p class="text-muted-custom small mt-3">These are examples, not a complete list.</p><a class="button-primary mt-3" href="map.html">Open the map</a></div></section>
-</main>
-  <footer class="site-footer"><div class="container d-flex flex-column flex-md-row justify-content-between gap-3"><span>Music Map</span><span>Midterm project</span></div></footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/app.js?v=2"></script>
-</body>
+    </footer>
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/app.js?v=3"></script>
+  </body>
 </html>

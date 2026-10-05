@@ -1,28 +1,19 @@
 # Music Map
 
-Music Map is a five-page responsive student website for exploring music through cities around the world.
+A five-page responsive website about music from six cities.
 
 ## Pages
 
-- `index.html` — introduction and featured cities
-- `map.html` — interactive map and all city cards
-- `artists.html` — artist examples with working genre filters
+- `index.html` — home page and featured cities
+- `map.html` — interactive city map
+- `artists.html` — artists with a genre filter
 - `genres.html` — comparison table
 - `contact.html` — suggestion form
 
-## How to run
+Open `index.html` in a browser. Bootstrap, Leaflet, CSS, JavaScript and the map image are included in the project folder.
 
-Open `index.html` in a browser, or serve this folder with a local web server. An internet connection is needed for Bootstrap, Leaflet and Google Fonts. The map graphic is included locally.
+The form checks required fields and saves suggestions in the current browser using `localStorage`. It does not send data to a server.
 
-## Course requirements
+Live site: https://unsaiddream.github.io/WEBT-MIDTERM/
 
-The project uses semantic HTML5, headings, lists, links, images, a table and a form. CSS demonstrates classes and IDs, Flexbox, Grid and positioning. Bootstrap provides its navigation, grid, container, spacing, button and text utilities. Custom media queries cover tablet (991px) and mobile (575px) widths.
-
-The form validates input and stores suggestions only in the current browser through `localStorage`. It does not send data to a server. City descriptions and genre moods are curated examples, not statistics.
-
-World map shapes come from the [geo-countries](https://github.com/datasets/geo-countries) dataset, derived from Natural Earth public-domain data.
-The Almaty artist profile is listed by [Apple Music](https://music.apple.com/us/artist/unordinary-incident/1738459970) as being from Almaty.
-
-## Publishing
-
-Upload the complete `music-map` folder to GitHub Pages or Netlify. Keep `assets/` beside the HTML files. Once published, add the live link here.
+Map shapes come from [geo-countries](https://github.com/datasets/geo-countries), based on Natural Earth data. Third-party library licenses are in `assets/vendor/`.
